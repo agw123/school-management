@@ -12,8 +12,6 @@ public class Student extends Person {
 	private char section;
 	private ArrayList<Exam> exams;
 	
-	
-	
 	public Student(){};
 
 	public Student(String name, String surname, String codiceFiscale) {

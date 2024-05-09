@@ -7,6 +7,8 @@ public abstract class Person extends CodiceFiscaleCalculator{
 	protected LocalDate birthDate;
 	protected String birthPlace;
 	protected String gender;
+	protected String address;
+	protected int phoneNumber;
 	
 	
 	public Person(String name, String surname, String codiceFiscale) {

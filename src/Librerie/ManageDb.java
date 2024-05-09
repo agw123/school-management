@@ -52,5 +52,15 @@ public class ManageDb {
 			return null;
 		}
 	}
-
+	
+	public boolean Disconnect() {
+		try {
+			connection.close();
+			return true;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
 }
