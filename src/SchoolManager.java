@@ -93,7 +93,7 @@ public class SchoolManager {
 
 	public static void readAllStudentsFromDb(School school) throws SQLException {
 		ManageDb school_db = new ManageDb();
-		boolean scuoladbConnection = school_db.connectToDB("localhost", "3306", "school_db", "school_server", "school");
+		boolean scuoladbConnection = school_db.connectToDB("localhost", "3306", "school_db", "agata_school", "agata");
 		ResultSet res;
 
 		if (scuoladbConnection == true) {
@@ -130,7 +130,7 @@ public class SchoolManager {
 
 	public static void insertStudentToDb(School school, Student student) {
 		ManageDb school_db = new ManageDb();
-		boolean scuoladbConnection = school_db.connectToDB("localhost", "3306", "school_db", "school_server", "school");
+		boolean scuoladbConnection = school_db.connectToDB("localhost", "3306", "school_db", "agata_school", "agata");
 		boolean res;
 
 		if (scuoladbConnection == true) {
