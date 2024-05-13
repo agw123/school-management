@@ -6,7 +6,7 @@ public class Exam {
 	private String subject;
 	private Student student;
 	private Teacher teacher;
-	private int vote;
+	private int vote;	
 	
 	public Exam(LocalDate date, String subject, Student student, Teacher teacher, int vote) {
 		super();
@@ -46,13 +46,5 @@ public class Exam {
 	public void setTeacher(Teacher teacher) {
 		this.teacher = teacher;
 	}
-	
-	
-	@Override
-	public String toString() {
-		return "Exam [date=" + date + ", subject=" + subject + ", student=" + student + ", teacher=" + teacher
-				+ ", vote=" + vote + "]";
-	}
-	
 	
 }
