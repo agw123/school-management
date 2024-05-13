@@ -1,4 +1,3 @@
-import java.util.Objects;
 
 public class Subject {
 	private int id;
@@ -40,23 +39,4 @@ public class Subject {
 	public String toString() {
 		return "Subject [id=" + id + ", name=" + name + ", description=" + description + "]";
 	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(description, id, name);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Subject other = (Subject) obj;
-		return Objects.equals(description, other.description) && id == other.id && Objects.equals(name, other.name);
-	}
-	
-	
 }
